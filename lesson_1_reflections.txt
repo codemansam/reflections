@@ -1,0 +1,56 @@
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+
+It cuts out all the distracting information and just highlights the differences.
+Helped me see the bug by only showing the discrepencies.  Brilliant!
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+    Fill in your answer here
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+    Pros:   Can commit at a logical break.  Like when a piece of work is completed.
+    Cons:   If you forget to commit you may lose a lot of work.  Or you might do
+            a lot of work and have something working well and then add a bug that is hard
+            to solve and when you roll back lose a lot of good work too.
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+    Probably because of programming reasons.  Like generally in front end web
+    you are saving an html and a css file at least.  Makes sense to save them
+    at the same time.
+
+How can you use the commands git log and git diff to view the history of files?
+
+    git 'log' shows the commit log of the specified path.  Each commit should have an
+    appropriate title so you can see where things happen.
+    git 'diff' cab be used to compare two commits and see exactly what has changed
+    between those two versions.
+
+How might using version control make you more confident to make changes that
+could break something?
+
+    Well if you totally balls it up you can go back to a working version and try again.
+    If a co-worker is incompetent you can peel them off a branch to mess with and get on
+    with the real work yourself.  Then later nobody's feelings get hurt.  You just kind of
+    never fold their 'work' into the main code ha ha.  It also makes it quite easy to find when
+    a bug has been introduced and then using diff you can find the bug.  Pretty sweet.
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+    I want to use it for all my web pages from now on.  It will be easier to give
+    an employer a git link so they can see my web page and see that I can use git in one
+    foul swoop.
+
+    How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+
+    You may be able to better identify areas where you slow down and make more commits because
+    of lessened confidence.  You could focus on your weakest/slowest areas and gain efficiency.
+    You might see that for a similar assignment in the future it might be better to start with a
+    particular aspect rather than leaving it to later as you can see from the log that once a particular thing
+    was out of the way the project progressed more smoothly.
