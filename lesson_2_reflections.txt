@@ -25,3 +25,10 @@ that isn't going to be an iterative change but a drastic or unrelated departure 
 like a different language setting.  Branches help because you could go a long way down an offshoot idea and then decide it's not working after all and abandon that branch.  If you are working on a lot of features for a narrow
 aspect of your program it makes sense that someone can check the commits related to that particular thing rather
 than finding it all mixed in with the work being done in the master branch.  It would obviously help when multiple people are working on a piece of software.  The project can be broken up and different people can work on different aspects.  Anyone who needs to figure out what someone else has been doing can look at their branch and read the commit log to see how progress is being made.
+
+How do the diagrams help you visualize the branch structure?
+
+The diagram makes it very easy to see the different branches and how reachable different commits are depending on
+what branch you have checked out.
+
+It also helped me to understand the concept of detached head.  It makes sense that if you checkout a commit that isn't itself a branch then it will not be reachable.
