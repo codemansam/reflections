@@ -10,3 +10,10 @@ directory you are going to commit.  It is different from the repository because 
 all the files and commits for the project.
 
 It's value is in being able to choose which files to save to a new commit.
+
+How can you use the staging area to make sure you have one commit per logical change?
+
+You can compare the staging area to the working directory and make sure that you aren't trying to
+add too many different files with more than one logical change at a time.  You might realise that there
+are more changes in the working directory than you first realised and decide to drop a file from the
+commit to make a seperate one.
