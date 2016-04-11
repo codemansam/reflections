@@ -5,3 +5,11 @@ If you weren't the only person working on something.  If you were concerned with
 Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
 
 You might not always be able to pull depending on when you are travelling or what the internet is like where you are.
+
+Describe the differences between forks, clones, and branches. When would you use one instead of another?
+
+A fork is a cloned repository.  This happens only on github and copies somebodys repository to your own.  Clones are a copy of a repository and can be done locally.  You might want two copies in different locations.  Perhaps two or more different people clone your git hub repository so they can work on it or take what you have and bend it to their own needs.  A branch is a copy of a clone
+
+What is the benefit of having a copy of the last known state of the remote stored locally?
+
+It allows you to update that last known state with the origin/master and THEN merge anything else you have done locally with it.
