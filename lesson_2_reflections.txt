@@ -32,3 +32,25 @@ The diagram makes it very easy to see the different branches and how reachable d
 what branch you have checked out.
 
 It also helped me to understand the concept of detached head.  It makes sense that if you checkout a commit that isn't itself a branch then it will not be reachable.
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+The result is having the changes from both branches brought together in such a way that nothing is broken and whatever new feature introduced and perfected in the off shoot branch is combined into the main branch.  We represent it in the diagram the way we do to show that the non main branch is joining back into the main.
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+Automatically merging makes it super easy to merge code in unambiguous circumstances.  Fast, efficient.  But when there is some question about what code should stay and what should go in cases where different branches have modified the same parts of the main branch code it needs to be done manually.  This ensures no weird errors creep into the code base but is slower and requires somebody who knows what the code is supposed to be doing to make judgement calls about how to resolve any conflicts.
+
+// Helpful git commands:
+git add  |    Add a file to the staging area
+git commit  |    Commit the files from the staging area to the repository
+git status  |    Show which files are in the staging area, and which files from the working directory are not part of the repository
+git diff  |    Git diff without arguments is comparing the working directory with the staging area
+git diff --staged  |    Compare the staging area with the repository
+git reset --hard  |    Undo all changes! There is no rollback for this, so be carefull!
+git checkout master  |    Restore the "Head" to the latest check-in (this will be part of a later lesson/module)
+git log --graph --oneline <branch1> <branch2>  |    Show a visual representation of the commit history within different branches
+git checkout -b new_branch_name  |    Creates a new branch and do a checkout on this branch in one call instead of git branch new_branch_name and git checkout new_branch_name
+git merge branch1 branch2  |    Merge two branches, branch2 get merged into branch1
+git branch -d name  |    Remove the branch with the specified name
+git show commitId  |    Show the changes made in this commit compared to the previous version. This is working even after merging.
